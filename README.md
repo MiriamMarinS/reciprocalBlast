@@ -3,6 +3,11 @@ Protocol to perform a reciprocal blast for comparison of two genome annotation v
 
 Reciprocal Best Hits (RBH) blast is a common method for infering putative orthologs.
 
+*Requisites:*
+* python version 3.6 or higher
+ * Libraries: biopython and progressbar
+* blast+: download from https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
+
 # **Forward blastn**
 
 Create a database with genome2 gene sequences.
