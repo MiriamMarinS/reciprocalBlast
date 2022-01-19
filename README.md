@@ -56,7 +56,7 @@ Blastn of genes in genome2 to genome1 with only one alignment. because you only 
 ```
 mkdir blast_backward
 cd blast_backward/
-nohup ../blast_forward.sh &
+nohup ../blast_backward.sh &
 ```
 
 Anlaysis of results from forward and backward blastn.
