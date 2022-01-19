@@ -86,4 +86,4 @@ nohup python -u ../parse_xml_reciprocal_blast.py &
 | ---          | ---                        | ---
 | \<str\>        | \<str\>                      | \<str\>
  
-> "RBH" string in RBH column indicates genome1 gene has a corresponding genome2 gene indicated in "Corresponding genome2 gene" column.*
+> "RBH" string in RBH column indicates genome1 gene has a corresponding genome2 gene indicated in "Corresponding genome2 gene" column.
