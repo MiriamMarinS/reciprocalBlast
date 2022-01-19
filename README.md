@@ -36,7 +36,7 @@ nohup ../blast_forward.sh &
 
 # **Backward blastn**
 
-Create a database with with genome1 gene sequences.
+Create a database with genome1 gene sequences.
 
 ```
 # DB of genes in genome1.
@@ -77,6 +77,8 @@ nohup python -u ../parse_xml_reciprocal_blast.py &
 *Output:*
 * tab separated table with the following columns:
 
+\
 |Genome1 gene | Corresponding genome2 gene | RBH|
+\
 
 > "RBH" string in RBH column indicates genome1 gene has a corresponding genome2 gene indicated in "Corresponding genome2 gene" column.*
