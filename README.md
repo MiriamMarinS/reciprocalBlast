@@ -5,7 +5,7 @@ Reciprocal Best Hits (RBH) blast is a common method for infering putative orthol
 
 *Requisites:*
 * python version 3.6 or higher
- * Libraries: biopython and progressbar
+  * Libraries: biopython and progressbar
 * blast+: download from https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
 
 # **Forward blastn**
