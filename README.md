@@ -1,9 +1,12 @@
 # reciprocalBlast
 Protocol to perform a reciprocal blast for comparison of two genome annotation versions based on different genome assemblies.
+
 Reciprocal Best Hits (RBH) blast is a common method for infering putative orthologs.
 
-Forward blastn
+# **Forward blastn**
+
 Create a database with genome2 gene sequences.
+
 ```
 mkdir reciprocal_blast
 cd ./reciprocal_blast
@@ -31,7 +34,8 @@ cd blast_forward/
 nohup ../blast_forward.sh &
 ```
 
-Backward blastn
+# **Backward blastn**
+
 Create a database with with genome1 gene sequences.
 
 ```
@@ -59,7 +63,10 @@ cd blast_backward/
 nohup ../blast_backward.sh &
 ```
 
+# **RBH analysis**
+
 Anlaysis of results from forward and backward blastn.
+
 Parse xml files from both blastn to get the correspondence between genes in both genomes.
 A RBH is considered when genome1 gene's hit (genome2 gene) in forward blast has as best hit the genome1 gene in backward blast.
 
@@ -67,7 +74,9 @@ A RBH is considered when genome1 gene's hit (genome2 gene) in forward blast has 
 nohup python -u ../parse_xml_reciprocal_blast.py &
 ```
 
-Output: tab separated table with the following columns:
-Genome1 gene | Corresponding genome2 gene | RBH
+*Output:*
+* tab separated table with the following columns:
 
-* "RBH" string in RBH column indicates genome1 gene has a corresponding genome2 gene indicated in "Corresponding genome2 gene" column.
+|Genome1 gene | Corresponding genome2 gene | RBH|
+
+> "RBH" string in RBH column indicates genome1 gene has a corresponding genome2 gene indicated in "Corresponding genome2 gene" column.*
