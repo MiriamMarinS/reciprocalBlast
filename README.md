@@ -80,7 +80,7 @@ Parse xml files from both blastn to get the correspondence between genes in both
 A RBH is considered when genome1 gene's hit (genome2 gene) in forward blast has as best hit the genome1 gene in backward blast.
 
 ```
-nohup python -u ../parse_xml_reciprocal_blast.py -blastf < /path/to/ blast forward xml files directory > -blastb < /path/to/  blast backward xml files directory > -o < /path/to/ output directory > &
+nohup python -u ../parse_xml_reciprocal_blast.py -blastf </path/to/ blast forward xml files directory> -blastb </path/to/  blast backward xml files directory> -o </path/to/ output directory> &
 ```
 
 *Output:*
