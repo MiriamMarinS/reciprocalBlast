@@ -6,6 +6,10 @@ Reciprocal Best Hits (RBH) blast is a common method for infering putative orthol
 *Requisites:*
 * python version 3.6 or higher
   * Libraries: biopython and progressbar
+    ```
+    pip install biopython
+    pip install progressbar
+    ```
 * blast+: download from https://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
 
 # **Forward blastn**
@@ -76,7 +80,7 @@ Parse xml files from both blastn to get the correspondence between genes in both
 A RBH is considered when genome1 gene's hit (genome2 gene) in forward blast has as best hit the genome1 gene in backward blast.
 
 ```
-nohup python -u ../parse_xml_reciprocal_blast.py &
+nohup python -u ../parse_xml_reciprocal_blast.py -blastf < /path/to/ blast forward xml files directory > -blastb < /path/to/  blast backward xml files directory > -o < /path/to/ output directory > &
 ```
 
 *Output:*
