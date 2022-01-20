@@ -17,7 +17,7 @@ import argparse
 
 
 # Arguments.
-parser = argparse.ArgumentParser(description='Process some integers.')
+parser = argparse.ArgumentParser()
 parser.add_argument('-blastf', '--blast_forward', help = "/path/to/ blast forward xml files directory")
 parser.add_argument('-blastb', '--blast_backward', help = "/path/to/ blast backward xml files directory")
 parser.add_argument('-o', '--output', help = "/path/to/ output directory")
