@@ -11,7 +11,7 @@ import argparse
 
 
 # Arguments.
-parser = argparse.ArgumentParser(description='Process some integers.')
+parser = argparse.ArgumentParser()
 parser.add_argument('-f', '--fasta', help = "Relative path and file name of the fasta file")
 parser.add_argument('-d', '--directory_out', help = "Relative path of the output directory")
 
