@@ -22,7 +22,7 @@ cd ./reciprocal_blast
 
 # DB of genes in genome2.
 mkdir genome2_db
-makeblastdb -in <path/to/genome2_seq.fasta> -dbtype nucl -out <path/to/genome2_db
+makeblastdb -in <path/to/genome2_seq.fasta> -dbtype nucl -out <path/to/genome2_db>
 ```
 
 Create a directory with a fasta file for each gene in genome1.
