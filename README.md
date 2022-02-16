@@ -1,5 +1,5 @@
 # reciprocalBlast
-Protocol to perform a reciprocal blast for comparison of two genome annotation versions based on different genome assemblies.
+Protocol to perform a reciprocal blast for comparison of two de-novo gene annotations based on different genome assemblies.
 
 Reciprocal Best Hits (RBH) blast is a common method for infering putative orthologs.
 
